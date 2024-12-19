@@ -1,0 +1,25 @@
+
+.logoArea {
+    position: relative;
+    right: 50px;
+   display:flex;
+   align-items:center;
+   padding: 1rem;
+   background-color: #f8f8f8;
+   height:65px;
+   
+  }
+
+  .logoText{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    outline: 2px solid #fff;
+  }
+
+  .logoArea img {
+    margin-right: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+  }
