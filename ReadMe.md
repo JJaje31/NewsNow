@@ -1,5 +1,5 @@
 # News Now
-This is a news aggregator that uses Node.js, Express, and React. This app is strictly built for my portfolio/Git Hub for potential employers/recruiters.
+This is a news aggregator that displays all the current news events via categories in the United States.
 
 ## Usage
 This apps server is run on localhost:5000.
