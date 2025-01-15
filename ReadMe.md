@@ -1,11 +1,37 @@
 # News Now
-This is a news aggregator that displays all the current news events via categories in the United States.
 
-## Usage
-This apps server is run on localhost:5000.
-This apps client is run on localhost:5173
-To start the app server side you have to cd into the server folder and npm start to start the server.
-To start the app client side you have to cd into the client folder and npm run dev to start the react server.
+News Now is a news aggregator that displays all the current news events in the United States, categorized for easy navigation.
 
 ## Features
-Use the drop down menu to see the list of catagories of different news options. From there will bring you to a page with titles on cards and a button that displays a modal to get a description of the article. From there you can either visit the actual website by clicking the card or the button on the bottom right of the modal to visit the website.
+- **Category Navigation**: Use the dropdown menu to browse through various news categories.
+- **Article Previews**: View titles on cards with a description accessible via a modal.
+- **Direct Links**: Access the full article by clicking the card or the button at the bottom of the modal.
+
+## Usage
+
+### Server Side
+1. Navigate to the `server` folder:
+   ```bash
+   cd server
+Start the server:
+npm start
+The server runs on localhost:5000.
+Client Side
+Navigate to the client folder:
+cd client
+Start the React development server:
+npm run dev
+The client runs on localhost:5173.
+Technologies
+Frontend: React.js
+Backend: Node.js with Express
+API Integration: News API (or specify the API used if applicable)
+Styling: React-Bootstrap and CSS
+
+
+Setup Instructions
+Clone the repository:
+Install dependencies for both the server and client:
+cd server && npm install
+cd client && npm install
+Follow the Usage instructions to start the app.
