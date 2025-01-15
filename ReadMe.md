@@ -13,25 +13,26 @@ News Now is a news aggregator that displays all the current news events in the U
 1. Navigate to the `server` folder:
    ```bash
    cd server
-Start the server:
-npm start
-The server runs on localhost:5000.
-Client Side
-Navigate to the client folder:
-cd client
-Start the React development server:
-npm run dev
-The client runs on localhost:5173.
-Technologies
-Frontend: React.js
-Backend: Node.js with Express
-API Integration: News API (or specify the API used if applicable)
-Styling: React-Bootstrap and CSS
+2. Start the server:
+   ```bash
+   npm start
+3 The server runs on localhost:5000.
+
+### Client Side
+Client Side:
+1. Navigate to the `server` folder:
+   ```bash
+   cd server
+2. Start the server:
+   ```bash
+   npm run dev
+3 The client runs on localhost:5173.
+
+###Technologies
+-Frontend: React.js
+-Backend: Node.js with Express
+-API Integration: News API (or specify the API used if applicable)
+-Styling: React-Bootstrap and CSS
 
 
-Setup Instructions
-Clone the repository:
-Install dependencies for both the server and client:
-cd server && npm install
-cd client && npm install
-Follow the Usage instructions to start the app.
+
