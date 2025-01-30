@@ -24,37 +24,41 @@ const Articles = (props) => {
   }
 
   return (
-    <div className='m-4'>
-      <Row gutter={[16, 16]}>
-        {props.article.map((desc, index) => (
-          <Col col={8} key={index}>
-            <Link onClick={handleClick} className="styleLink" key={index} to={desc.link}>
-              <Card key={desc.article_id}
-                hoverable
-                style={{
-                  borderRadius: 7,
-                  height: 500,
-                  width: 300
-                }}
-                cover={desc.image_url ? (<img height="150" width="50" src={desc.image_url} />) :
-
-                  (<img height="150" width="50" src='/images/newsLogo.jpg' />)
-                }
-              >
-                <header>
-                  <h5 className='title'>{desc.title}</h5>
-                </header>
-                <div data-id={desc.article_id} className='idGrab text-center mt-5'>
-                  <InfoModal article={article} />
-                </div>
-              </Card>
-            </Link>
-          </Col>
-        ))}
-      </Row>
-
-
-    </div>
+<div className='m-4 d-flex justify-content-center'>
+  <Row gutter={[16, 16]} justify="center">
+    {props.article.map((desc, index) => (
+      <Col xs={24} sm={12} md={8} lg={6} key={index} className="d-flex justify-content-center ">
+        <Link onClick={handleClick} className="styleLink" to={desc.link}>
+          <Card
+            key={desc.article_id}
+            hoverable
+            style={{
+              borderRadius: 7,
+              height: 500,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center'
+            }}
+            cover={
+              desc.image_url ? (
+                <img height="150" width="100%" src={desc.image_url} alt="news" />
+              ) : (
+                <img height="150" width="100%" src='/images/newsLogo.jpg' alt="news" />
+              )
+            }
+          >
+            <header>
+              <h5 className='title text-center'>{desc.title}</h5>
+            </header>
+            <div data-id={desc.article_id} className='idGrab text-center mt-5'>
+              <InfoModal article={article} />
+            </div>
+          </Card>
+        </Link>
+      </Col>
+    ))}
+  </Row>
+</div>
 
   );
 };

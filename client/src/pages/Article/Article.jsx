@@ -6,11 +6,13 @@ import Article from '../../components/Articles/Articles'
 import {Layout} from 'antd';
 const {Content,Footer} = Layout;
 import './Article.css'
+const backendUrl = import.meta.env.VITE_URL_API;
+
 
 function News() {
 const [news,setNews] = useState([])
   const getNews = () => {
-    axios.get('http://localhost:5000/search/api')
+    axios.get(backendUrl)
     .then(res =>{
 if(res.data.results === undefined){
   window.location.href = '/error'
@@ -37,7 +39,7 @@ if(res.data.results === undefined){
     <>
   
     <Nav/>
-    <Layout >
+    <Layout>
   <Content>
 <Article article={news}/>
   </Content>

@@ -3,6 +3,8 @@ import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './WelcomeForm.css'
+const backendUrl = import.meta.env.VITE_URL_SEARCH
+
 
 function Welcome() {
   const [searchData, setSearchData] = useState('')
@@ -13,7 +15,7 @@ function Welcome() {
       window.location.href = '/'
     } else {
       e.preventDefault()
-      await fetch('http://localhost:5000/search', {
+      await fetch(backendUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,7 +31,7 @@ function Welcome() {
     setSearchData({ results: e.target.value })
   }
   return (
-    <div className="formBox">
+    <div className="formBox vw-100">
       <Form>
         <Form.Group>
           <Form.Control  className="text-center"as="select" value={searchData.results} onChange={handleChange} placeholder="Choose News Articles To View">
