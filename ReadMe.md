@@ -2,6 +2,9 @@
 
 News Now is a news aggregator that displays all the current news events in the United States, categorized for easy navigation.
 
+## Live Demo
+[News Now](https://news-now-phi.vercel.app/) is now live! Explore the platform and experience current news events.
+
 ## Features
 - **Category Navigation**: Use the dropdown menu to browse through various news categories.
 - **Article Previews**: View titles on cards with a description accessible via a modal.
@@ -13,26 +16,9 @@ Technologies
 -API Integration: NewsIO
 -Styling: React-Bootstrap and CSS
 
-## Usage
 
-### Server Side
-1. Navigate to the `server` folder:
-   ```bash
-   cd server
-2. Start the server:
-   ```bash
-   npm start
-3 The server runs on localhost:5000.
 
-### Client Side
-Client Side:
-1. Navigate to the `server` folder:
-   ```bash
-   cd server
-2. Start the server:
-   ```bash
-   npm run dev
-3 The client runs on localhost:5173.
+
 
 
 
