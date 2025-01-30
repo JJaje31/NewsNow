@@ -19,6 +19,10 @@ const Articles = (props) => {
     }
   };
 
+  if(article.length === 0){
+    return <div className="d-flex justify-content-center align-items-center vw-100 vh-100"><h1>Articles are loading!!</h1></div>
+  }
+
   return (
     <div className='m-4'>
       <Row gutter={[16, 16]}>
