@@ -10,6 +10,9 @@ router.post('/search',async(req,res) =>{
 })
 
 router.get(`/search/api`,async(req,res) => {
+    if (!search) {
+        return res.status(400).json({ error: "Missing category parameter" });
+    }
     try{
     const response = await axios.get(`https://newsdata.io/api/1/latest?apikey=${apiKey}&country=us&language=en&category=${search}`)
 res.json(response.data)} catch(error){
